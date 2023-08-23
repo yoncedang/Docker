@@ -5,9 +5,10 @@ services:
     image: mysql:latest
     container_name: my-mysql
     environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: booking_db
       MYSQL_USER: root
-      MYSQL_PASSWORD: booking_db
+      MYSQL_PASSWORD: Abc@123456
     volumes:
       - mysql-data:/var/lib/mysql
     ports:
